@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>RIKHELAN HAUS - About Us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jim+Nightshade&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo-placeholder">
+    <img src="logo.png" alt="RIKHELAN HAUS">
+</a>
+        <div class="header-right">
+            <div class="socials">
+                <a href="https://www.facebook.com/?locale=it_IT"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+                <a href="https://web.telegram.org/k/"><i class="fab fa-telegram"></i></a>
+                <a href="https://web.whatsapp.com"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://mail.google.com/mail/u/0/#inbox"><i class="fas fa-envelope"></i></a>
+            </div>
+            <div class="nav-and-lang">
+                <nav>
+                    <a href="order.html" data-i18n="nav_order">Бронь</a>
+                    <a href="contacts.html" data-i18n="nav_contacts">Контакты</a>
+                </nav>
+                <div class="custom-dropdown lang-switch">
+                    <div class="dropdown-selected"><span data-i18n="lang_ru">Русский</span> <i class="fas fa-chevron-down"></i></div>
+                    <div class="dropdown-options">
+                        <div class="dropdown-option" data-value="ru" data-i18n="lang_ru">Русский</div>
+                        <div class="dropdown-option" data-value="en" data-i18n="lang_en">English</div>
+                        <div class="dropdown-option" data-value="it" data-i18n="lang_it">Italiano</div>
+                        <div class="dropdown-option" data-value="de" data-i18n="lang_de">Deutsch</div>
+                        <div class="dropdown-option" data-value="fr" data-i18n="lang_fr">Français</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <h1>RIKHELAN H·A·U·S</h1>
+        <div class="story-section">
+            <div class="story-row">
+                <img src="images/story-1.jpg" class="story-img" alt="Наша история">
+                <div class="story-text" data-i18n="story_1_txt">Текст 1</div>
+            </div>
+            <div class="story-row">
+                <img src="images/story-2.jpg" class="story-img" alt="Наша история">
+                <div class="story-text" data-i18n="story_2_txt">Текст 2</div>
+            </div>
+            <div class="story-row">
+                <img src="images/story-3.jpg" class="story-img" alt="Наша история">
+                <div class="story-text" data-i18n="story_3_txt">Текст 3</div>
+            </div>
+            <div class="story-row">
+                <img src="images/story-4.jpg" class="story-img" alt="Наша история">
+                <div class="story-text" data-i18n="story_4_txt">Текст 4</div>
+            </div>
+            <div class="story-row">
+                <img src="images/story-5.jpg" class="story-img" alt="Наша история">
+                <div class="story-text" data-i18n="story_5_txt">Текст 5</div>
+            </div>
+        </div>
+
+        <h2 id="blog" data-i18n="blog_title">Блог</h2>
+        <div class="blog-grid"></div> <!-- Фотографии теперь генерируются скриптом автоматически -->
+
+        <h2 data-i18n="services_title">Услуги отеля</h2>
+        <div class="services-list">
+            <div class="service-item">
+                <div class="service-header"><span data-i18n="srv_spa_t">SPA & Релаксация</span> <i class="fas fa-chevron-down"></i></div>
+                <div class="service-content"><div class="service-text" data-i18n="srv_spa_d">Описание</div></div>
+            </div>
+            <div class="service-item">
+                <div class="service-header"><span data-i18n="srv_rest_t">Ресторан</span> <i class="fas fa-chevron-down"></i></div>
+                <div class="service-content"><div class="service-text" data-i18n="srv_rest_d">Описание</div></div>
+            </div>
+            <div class="service-item">
+                <div class="service-header"><span data-i18n="srv_eco_t">Прокат</span> <i class="fas fa-chevron-down"></i></div>
+                <div class="service-content"><div class="service-text" data-i18n="srv_eco_d">Описание</div></div>
+            </div>
+            <div class="service-item">
+                <div class="service-header"><span data-i18n="srv_conc_t">Консьерж</span> <i class="fas fa-chevron-down"></i></div>
+                <div class="service-content"><div class="service-text" data-i18n="srv_conc_d">Описание</div></div>
+            </div>
+        </div>
+    </main>
+
+    <div class="gallery-modal" id="galleryModal"><span class="modal-close" id="modalClose">&times;</span><img id="modalImg" src=""></div>
+    <footer data-i18n="footer_text">[ Лицензионное соглашение ]</footer>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>RIKHELAN HAUS - Order</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jim+Nightshade&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo-placeholder">
+    <img src="logo.png" alt="RIKHELAN HAUS">
+</a>
+        <div class="header-right">
+            <div class="nav-and-lang">
+                <nav>
+                    <a href="about.html" data-i18n="nav_about">О нас</a>
+                    <a href="contacts.html" data-i18n="nav_contacts">Контакты</a>
+                </nav>
+                <div class="custom-dropdown lang-switch">
+                    <div class="dropdown-selected"><span data-i18n="lang_ru">Русский</span> <i class="fas fa-chevron-down"></i></div>
+                    <div class="dropdown-options">
+                        <div class="dropdown-option" data-value="ru" data-i18n="lang_ru">Русский</div>
+                        <div class="dropdown-option" data-value="en" data-i18n="lang_en">English</div>
+                        <div class="dropdown-option" data-value="it" data-i18n="lang_it">Italiano</div>
+                        <div class="dropdown-option" data-value="de" data-i18n="lang_de">Deutsch</div>
+                        <div class="dropdown-option" data-value="fr" data-i18n="lang_fr">Français</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <h1 data-i18n="order_title">RIKHELAN H·A·U·S</h1>
+        <div class="rooms-container">
+            <div class="room-card">
+                <div class="room-photo" data-i18n="rm_1_p">[ Фото: Стандарт ]</div>
+                <div class="room-info">
+                    <div class="room-title" data-i18n="rm_1_t">Лесной Стандарт</div>
+                    <div class="room-desc" data-i18n="rm_1_d">Описание</div>
+                    <div class="room-price">120 € / night</div>
+                </div>
+            </div>
+            <div class="room-card">
+                <div class="room-photo" data-i18n="rm_2_p">[ Фото: Полулюкс ]</div>
+                <div class="room-info">
+                    <div class="room-title" data-i18n="rm_2_t">Комфорт Люкс</div>
+                    <div class="room-desc" data-i18n="rm_2_d">Описание</div>
+                    <div class="room-price">190 € / night</div>
+                </div>
+            </div>
+            <div class="room-card">
+                <div class="room-photo" data-i18n="rm_3_p">[ Фото: Шале ]</div>
+                <div class="room-info">
+                    <div class="room-title" data-i18n="rm_3_t">Семейное Шале</div>
+                    <div class="room-desc" data-i18n="rm_3_d">Описание</div>
+                    <div class="room-price">350 € / night</div>
+                </div>
+            </div>
+        </div>
+
+        <form class="booking-bar">
+            <div class="input-group">
+                <label data-i18n="bk_room">Выберите номер</label>
+                <!-- Новый красивый Dropdown для комнат -->
+                <div class="custom-dropdown">
+                    <input type="hidden" name="room" value="standard">
+                    <div class="dropdown-selected"><span data-i18n="rm_1_t">Лесной Стандарт</span> <i class="fas fa-chevron-down"></i></div>
+                    <div class="dropdown-options">
+                        <div class="dropdown-option" data-value="standard" data-i18n="rm_1_t">Лесной Стандарт</div>
+                        <div class="dropdown-option" data-value="lux" data-i18n="rm_2_t">Комфорт Люкс</div>
+                        <div class="dropdown-option" data-value="chalet" data-i18n="rm_3_t">Семейное Шале</div>
+                    </div>
+                </div>
+            </div>
+            <div class="input-group">
+                <label data-i18n="bk_g">Количество гостей</label>
+                <input type="number" min="1" max="6" value="2">
+            </div>
+            <div class="input-group">
+                <label data-i18n="bk_in">Дата заезда</label>
+                <input type="date" required>
+            </div>
+            <div class="input-group">
+                <label data-i18n="bk_out">Дата выезда</label>
+                <input type="date" required>
+            </div>
+            <button type="submit" class="wood-btn" data-i18n="btn_book">Забронировать</button>
+        </form>
+    </main>
+
+    <footer data-i18n="footer_text">[ Лицензионное соглашение ]</footer>
+    <script src="script.js"></script>
+</body>
+</html>
